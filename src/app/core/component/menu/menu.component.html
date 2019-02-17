@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" fxLayout="row">
+  <div *ngIf="menu && menu.length; else defaultMenu">
+    <nav>
+      <button
+        mat-button
+        *ngFor="let m of menu"
+        [routerLink]="'/' + m === 'home' ? '' : m"
+        routerLinkActive="mat-accent"
+      >
+        {{ m | titlecase }}
+      </button>
+    </nav>
+  </div>
+</mat-toolbar>
+
+<ng-template #defaultMenu>
+  BC App
+</ng-template>

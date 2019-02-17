@@ -6,8 +6,9 @@ An angular app that can parse and render a screen based on the JSON files provid
 
 ```
 $ npm install
-$ npm start:web
-$ npm start:api (on a separate terminal)
+$ npm run start:web
+$ npm run start:api (on a separate terminal)
+$ webapp is served in http:localhost:4200
 ```
 
 ## Notes
